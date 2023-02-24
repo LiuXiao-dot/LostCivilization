@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3613ae3c8eef145a53fb6607f5912a, type: 3}
+  m_Name: SceneSettingTool
+  m_EditorClassIdentifier: 
+  folder: Assets/Scenes
+  newScene: 
+  launchScenePrefab: {fileID: 8452226622097616030, guid: d6758ddfdf272d34885b7ebb314f5338,
+    type: 3}
+  uiScenePrefab: {fileID: 1613417459520865102, guid: 82d8d97e7ec54ee48ba0d253ea2d2fe8,
+    type: 3}
+  gameScenePrefab: {fileID: 3228471221463485322, guid: 2118284a28f202348aaa5c494d69eb5d,
+    type: 3}

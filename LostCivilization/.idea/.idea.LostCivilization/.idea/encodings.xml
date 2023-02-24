@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/AppCore/GameConfig.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/AppCore/GameContext.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/LCGameManager.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Test/DegreeCalculate.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/UI/MainWindowCtl.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/Message/WorldMessage.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/AWorldController.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/IWorldController.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/IWorldModel.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Controller/AStandardController.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Controller/StandardBuildingController.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Controller/StandardMainController.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Controller/StandardStateController.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Controller/StandardStoreController.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Controller/StandardWaveController.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Model/StandardCharacterSO.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Model/StandardGroup.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Model/StandardGroupSO.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/Model/StandardWorldModel.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/World/OOD/StandardMode/View/StandardWorldView.cs" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: XWResources
+  m_EditorClassIdentifier: 
+  m_GroupName: XWResources
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8b49997b7fd1df14c8d301c7b526da8b
+  m_SerializeEntries:
+  - m_GUID: 2118284a28f202348aaa5c494d69eb5d
+    m_Address: GameScenePrefab.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d6758ddfdf272d34885b7ebb314f5338
+    m_Address: LaunchScenePrefab.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 82d8d97e7ec54ee48ba0d253ea2d2fe8
+    m_Address: UIScenePrefab.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9d89c20d058fc4b1abfb0c4a398836eb
+    m_Address: Button_Circle01_Gray.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9769f05840cde480fa6bf1bd95e703e4
+    m_Address: Button_Rectangle01_BlueGray.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f4df4f50c3d39462d88eebbd8e0fbd21
+    m_Address: Button_Rectangle04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0767699d167fa4530a0fb52359271ab6
+    m_Address: Button_Sqeure01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: add72ba367b0242b0a2a34bd643a15c2
+    m_Address: Slider_EdgeDecoType_00_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d15c92f801fae4dd5bc97d87f4a5ebfc
+    m_Address: XWLOAINDG_loading.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c32daee26e3ccbc428b98458295a2e2c
+    m_Address: InputReader.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7e37a56a32942b44db145b050d2a3b6c
+    m_Address: WindowManagerConfigSO.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 726d0bec8fe0585439fb010c9d863e58, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 89bce2944f1638d4eb40d547b2d7031a, type: 2}
+    - {fileID: 11400000, guid: 60c3797015236944798c89025692079c, type: 2}

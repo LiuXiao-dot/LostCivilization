@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216a8c5862826744084f1b6cfe0a3649, type: 3}
+  m_Name: ToolMenuConfig
+  m_EditorClassIdentifier: 
+  assemblies:
+  - {fileID: 5897886265953266890, guid: 9c78e1b1ae29712479fe44b3e9de0708, type: 3}
+  - {fileID: 5897886265953266890, guid: 77aa4aff2a839454dacfd2987407bea2, type: 3}
+  - {fileID: 5897886265953266890, guid: 6055be8ebefd69e48b49212b09b47b2f, type: 3}
+  dlls: []
+  ugui:
+  - {fileID: 5897886265953266890, guid: 2bafac87e7f4b9b418d9448d219b01ab, type: 3}

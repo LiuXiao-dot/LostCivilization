@@ -1,0 +1,857 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Prefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: Prefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 29006f8583e0faa448c80cc51176dedd
+  m_SerializeEntries:
+  - m_GUID: 1b5c3342956ea4f2391c4e10ce034478
+    m_Address: Button_Circle01_Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: abc2d5e23e86f4587b4e10b38c668f34
+    m_Address: Button_Circle01_Green.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 87f0c6aa9b85045efb55b6f6ad1df416
+    m_Address: Button_Circle01_Purple.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7014b5a219df84cbd97ef7bd5830de3b
+    m_Address: Button_Circle01_Red.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4522bc66b01214a1190da64aa3348c98
+    m_Address: Button_Circle02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 494d623cffdaf49938f9d0998f25c059
+    m_Address: Button_Rectangle01_Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 489c6aee211b44414872f7afdf05d7a5
+    m_Address: Button_Rectangle01_Brown.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 272bc530c5144401191ea457c9ac6e36
+    m_Address: Button_Rectangle01_Dark.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0eafc1614a0ec4e84994a74cff36db84
+    m_Address: Button_Rectangle01_Dim.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 018947ce1abc14047b699d7e8fdcf673
+    m_Address: Button_Rectangle01_Gray.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce66926fbee764449a9784a32e1d5033
+    m_Address: Button_Rectangle01_Green.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c7f082ce7c2dc40da9fd383bae796e6e
+    m_Address: Button_Rectangle01_Mint.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8813307fa2c464baeaa2b0733ac11962
+    m_Address: Button_Rectangle01_Purple.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bafa083cebd8a44b3a2ea74ef38ae939
+    m_Address: Button_Rectangle01_Red.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d1391910418d64ed18f1faeb4b5ab518
+    m_Address: Button_Rectangle01_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9e3dc5478531a44ea9d3d15a9f4f0690
+    m_Address: Button_Rectangle01_Yellow.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d097a1fce7c5a4d80b7c9ffeea14e540
+    m_Address: Button_Rectangle02_Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6f457722106534880ba19ad760aa35d2
+    m_Address: Button_Rectangle03_Green.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b4f7ff12b9c3c49ccb08583a2e857c25
+    m_Address: Frame_BasicFrame_Hexagon_l_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2502c8711f992492a9814a5ec4a231b2
+    m_Address: Frame_BasicFrame_Hexagon_l_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eb2d8af0c67ac454c889c47ce618a6a2
+    m_Address: Frame_BasicFrame_Hexagon_m_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3c2a53c575d9a4b6fb81283c72c522c0
+    m_Address: Frame_BasicFrame_Hexagon_m_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: df7cef0d63b4b42d6865a4297c165db3
+    m_Address: Frame_BasicFrame_Hexagon_s_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d7d1df8900f5f40168567badf70fd0e6
+    m_Address: Frame_BasicFrame_Hexagon_s_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 76649ae7ee75a48e7bfee7a798dab70c
+    m_Address: Frame_BasicFrame_Square_l_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 518346fdc9d674fe1877d1201eedee3c
+    m_Address: Frame_BasicFrame_Square_l_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b44f1a17feed54a39803bcbae1c473da
+    m_Address: Frame_BasicFrame_Square_m_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eb922c11131d3475bbc4da010f1f330e
+    m_Address: Frame_BasicFrame_Square_m_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ba4d8c87caf5f4b4a999e13cb05fc46c
+    m_Address: Frame_BasicFrame_Square_s_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 944aa015a45014d12a9b203fc7f13b3b
+    m_Address: Frame_BasicFrame_Square_s_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4eb5f3cfc0f8c456980c4026da9b71ed
+    m_Address: Frame_IconFrame_Circle_00.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 772a22e4c073f4a5f85953345151fdb4
+    m_Address: Frame_IconFrame_Circle_00_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1db5b8924b52d4383939ae45c727f2dc
+    m_Address: Frame_IconFrame_Circle_00_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: df3c050e5e7b94eb787c5ed5e7b6bd48
+    m_Address: Frame_LineFrame_00_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a0e2ba399ba3645f095b39e96995a3da
+    m_Address: Frame_LineFrame_00_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b613bb5c144fb499c807b6542a867640
+    m_Address: Frame_LineFrame_01_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce03ded5233374149a8d7cf6863713f6
+    m_Address: Frame_LineFrame_01_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 580818536c8b842e081f603b488ee4a9
+    m_Address: Frame_LineFrame_02_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc774c27d3ed942eeb78cd42fb702088
+    m_Address: Frame_LineFrame_02_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 61776dc18e8e24ba8b752028f4941dfe
+    m_Address: Frame_LineFrame_03_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0a69ca64fb6234bbcb8f54acc70410be
+    m_Address: Frame_LineFrame_03_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a9d549d136fb14d09820fab76579682e
+    m_Address: Frame_LineFrame_04_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef777ede181dd408c8a4afb11f1c16e7
+    m_Address: Frame_LineFrame_04_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 21b4468c8278146b0b2864b1408fa48b
+    m_Address: Frame_LineTextFrame_00_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4bdb0a6c6511c4664aa4da8ec4a3a9e5
+    m_Address: Frame_LineTextFrame_00_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 851691dc9be1b4959a2d6f57b2096fb6
+    m_Address: Frame_LineTextFrame_01_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c1dbeb29ca9a74a1fb1ef515ee315e3d
+    m_Address: Frame_LineTextFrame_01_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e8c3640f4853347a2821750c3ff75ed8
+    m_Address: Frame_LineTextFrame_02_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1dc4bfdb6b92649b4a8cba76be71c60e
+    m_Address: Frame_LineTextFrame_02_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4518dea19dacc4920ac012d15fb91ccf
+    m_Address: Frame_LineTextFrame_03_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8783275836d314590874db3ad8455137
+    m_Address: Frame_LineTextFrame_03_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 375bff55eac444f63ae8980aa3b79d36
+    m_Address: Frame_LineTextFrame_04_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6ae3aeb5b39e64a27b382d2309102b28
+    m_Address: Frame_LineTextFrame_04_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3dd0c81f20a60447aa8ec9c5a0e32404
+    m_Address: Frame_LineTextFrame_05_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 03ef653b1dd6b4618b91976d5017b975
+    m_Address: Frame_LineTextFrame_05_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d5e40ab7452454ebdac156d47f7d3b01
+    m_Address: Frame_LineTextFrame_06_Demo_Gray.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 77cbc417d65614988bf1c6dc55b6629d
+    m_Address: Frame_LineTextFrame_06_Demo_Red1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 55e560ff436d04faeb71536d88e412fd
+    m_Address: Frame_LineTextFrame_06_Demo_Red2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 52e79b6fc591d42238d057ca009e018d
+    m_Address: Frame_LineTextFrame_06_Demo_Yellow.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7910eef40670746cc925b80c275bbe02
+    m_Address: Frame_LineTextFrame_06_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e59545af645f54766acbda3a98299944
+    m_Address: Frame_LineTextFrame_07_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f6c79087ac36845529a7800e74e977e4
+    m_Address: Frame_LineTextFrame_07_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f2d9ce4ad462743fe9eca0ff4313a976
+    m_Address: Frame_TableFarme_00_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cf8c827a566db4054a50abc515153daa
+    m_Address: Frame_TableFarme_00_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 38f2ee2938ebd436e814b71aeeb4cdf8
+    m_Address: Frame_TableFarme_01_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 61fa5e289cd6144c0b8ed8cabede423e
+    m_Address: Frame_TableFarme_01_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1c6e6d155529a492a8aa3cc6b591211b
+    m_Address: Frame_TableFarme_02_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f7f8bf1f70adf4eaf84fa80c90255544
+    m_Address: Frame_TableFarme_02_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7b2a6efdf76f94e6898e15e6c1648e91
+    m_Address: Frame_Tabmenu_Focus_00.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f9b6ef0480d4d44bcb2bf726051c3ddd
+    m_Address: Frame_Tabmenu_Focus_01_l.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce3939b6616ee4674990936966d23821
+    m_Address: Frame_Tabmenu_Focus_01_s.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 88135522bdde04eccadbdbb0838faa7f
+    m_Address: Label_Flag_00.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: abad604c5b4f44a3a8e2012d515a9204
+    m_Address: Label_Flag_01_Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc5553f013fdd4064a4a454d97cea05c
+    m_Address: Label_Flag_01_Red.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4fe37f380213a4657bfb88fff95170e3
+    m_Address: Label_Flag_02_Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e39b273c91b2842179e3c2e6537453b6
+    m_Address: Label_Flag_02_Purple.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5a4f2a16d641f4828bd32febe7de9f33
+    m_Address: Label_Flag_02_Red.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5560307eafcf8434a957bee7c407ec4d
+    m_Address: Label_Flag_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e5d0fa3806ee64c7ba8b27dcc22059e9
+    m_Address: Label_Ribbon_00.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c103a3073da964b6eac9a9cf6f17792c
+    m_Address: Label_Ribbon_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a5a0758e4f6dd440caa6d592229eb5bf
+    m_Address: Label_Tag_00.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 376440b42f4644163ada1cdd47502246
+    m_Address: Label_Tag_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a3961aabb8b204923b73a0cb8c29abfe
+    m_Address: Label_Tag_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b8f9793fe5e89436287bc3def88dfabc
+    m_Address: Label_Tag_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6d00177766644a7438608ddf251652ba
+    m_Address: TXT_message.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0d40f51ad25e343b1bf7bceac781f473
+    m_Address: Popup_00.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c0cd3bbfa667e4091ad22d2c1b8a5e70
+    m_Address: Popup_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e1e5e832e16f4667a51110684b91bec
+    m_Address: Popup_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7f8d397a94d1d4a1695ba124ecfa698f
+    m_Address: Popup_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 650ecfd66e4044c95b7b72b0868035f2
+    m_Address: Slider_BasicType_00_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4cb71ff0830404b22a5323b02d4b56fe
+    m_Address: Slider_BasicType_00_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 43dae86875de248058d7fda61f4307ba
+    m_Address: Slider_BasicType_01_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 72a489dfc15ac4c85b5dfc9fdbd8f066
+    m_Address: Slider_BasicType_01_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 19a0cc114aa2341bfa61682f07649b2e
+    m_Address: Slider_BasicType_02_Demo_Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 43990869bea37444d8a34e40f2795c06
+    m_Address: Slider_BasicType_02_Demo_Green.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 171944b16dded47e49851488064a97a3
+    m_Address: Slider_BasicType_02_Demo_Orange.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 82d1889c87ece45bbb192bb52451dbc9
+    m_Address: Slider_BasicType_02_Demo_Pink.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d6421cd6caf704d56bdb94edb8bf57eb
+    m_Address: Slider_BasicType_02_Demo_Red.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 760b450ca1d204af2ad179272bbec195
+    m_Address: Slider_BasicType_02_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1e9d2298f772a426a93952216970473a
+    m_Address: Slider_Batteary.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a4cf8edc7736c42d088e76e6f9f66b71
+    m_Address: Slider_EdgeDecoType_00_WhiteFill.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8c7615c5d559848eca51413e4687662d
+    m_Address: Slider_EdgeDecoType_01_demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ca7e9b503dabc4964b626873fd6b7a63
+    m_Address: Slider_EdgeDecoType_01_WhiteFill.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: efb62e6025280479bbdaf0c23972c6e6
+    m_Address: Slider_EdgeDecoType_02_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fe6f421e1765443858d192179a5b71fd
+    m_Address: Slider_EdgeDecoType_02_WhiteFill.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 612692e1d0e4f4bbda9ef0a3aac7be73
+    m_Address: Slider_EdgeDecoType_03_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 57b92bc3b322842e99f6eaaf41f35654
+    m_Address: Slider_HandleType_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 01cda1b7591044d1681d471acb246c02
+    m_Address: Slider_HandleType_WhiteFill.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a2b402af837b94f6c85dc176c94362fb
+    m_Address: Slider_IconType_00.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: deded62b4052a42c8b903dd48176bf1d
+    m_Address: Slider_IconType_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3db12770c20524b3da983509775733ec
+    m_Address: Slider_IconType_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2cda8194d06704fdbaab0aba17238319
+    m_Address: Slider_IconType_03_basic.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ab0bb3c789e1c498ea56d1593289dcbe
+    m_Address: Slider_IconType_03_l.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f83e716c4a87742b483568857a7b833c
+    m_Address: Slider_IconType_03_s.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c9302b425e204abd95f258e0e8d551a
+    m_Address: Slider_IconType_04_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b34e8e54a8dd04016b9cc802b2de15c9
+    m_Address: Slider_IconType_04_Demo_basic.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7b1dd9f4e0c4f44679a169d698dcc9da
+    m_Address: Slider_IconType_04_White.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d33b957d0a73b41d4985b3de641384c6
+    m_Address: Slider_IconType_04_White_basic.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cb133cc04ecf54170986c8ca64ce7d62
+    m_Address: Slider_IconType_05_Demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e8cc8085302ad4e1898fd43cc69e8d7c
+    m_Address: Common_Buttons.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 395b7884b2bf742c492f03745e20ad9e
+    m_Address: Common_Component.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f6c952d1102184400bae63f2dfce5e7f
+    m_Address: Common_Equipment Icons.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e667c7f09a5e470b91b16528d1c97a2
+    m_Address: Common_Item Icons1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: adb3d7ea3cb3a47948b208666db8ed39
+    m_Address: Common_Item Icons2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6d22ddba36ff84677a64beeb4857020f
+    m_Address: HomeScene.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 09501088d016d4453beaeace62fdbffb
+    m_Address: HomeScene_Popup_ADRemove.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b01294d6015e341fe816d51ea592fcdc
+    m_Address: HomeScene_Popup_Checking.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6e6e71c58be9d4240bdc2b8c211c3bfd
+    m_Address: HomeScene_Popup_EUALPrivacy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ae2063843b8584e1a8e9bbacf5b43677
+    m_Address: HomeScene_Popup_Login.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2f3a156228e244db496f39bd7fa30f51
+    m_Address: HomeScene_Popup_Message.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 56991e17768e94b62acd44225f26fa7f
+    m_Address: HomeScene_Popup_Name.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c44f514fe27ee4be4bbcb31a2e700997
+    m_Address: HomeScene_Popup_Offline.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f4bc29f986ad4d87823959075a1c24e
+    m_Address: HomeScene_Popup_Signup.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 340f78fc3553245dab0cad02b3e2dc4d
+    m_Address: HomeScene_Popup_Update.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0593b0dd0c5b74e868cb11047bfe9aef
+    m_Address: LevelUp.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1bdd344e737db49d3a7011f81bd69c97
+    m_Address: Loading.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 30d8309c12c854e548600dfb5657d609
+    m_Address: Panel_BattlePass.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c6273abe47c584cc29e13a6578aed995
+    m_Address: Panel_CharacterSelect.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9135e1f94ece4493fae993f87769ca07
+    m_Address: Panel_Equipment.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fbc55d836c63b49229d5872801fab7ca
+    m_Address: Panel_GuideBook.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2f8072f83878640d881fa05273bc7231
+    m_Address: Panel_Guild.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a5982fa67d2524b9eafe9bf105e7c2ca
+    m_Address: Panel_Heroes.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c90bf0bb262d04cf1a0d34f84db1c61d
+    m_Address: Panel_Mission.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f64d07eabea5e42be992067f7268056b
+    m_Address: Panel_Ranking.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c82dd37e8cdfe4aba8c8fdd4ccbf22f2
+    m_Address: Panel_Rate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d802dc33e0e94b21a6e9744cc33cc29
+    m_Address: Panel_RewardDaily.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a6a2d390e5bcf4056a28e85a67b7bcff
+    m_Address: Panel_RewardWeek.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9b51490492c304ea3acd6f211c8f2979
+    m_Address: Panel_Roulette.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 89dd73f3d353343cfada74341075969e
+    m_Address: Panel_Settings.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8872758ff2ca744358a9db83fcf2b28d
+    m_Address: Panel_Shop_Chest.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8bd191038ad8e409baf37409fc049e5e
+    m_Address: Panel_Shop_Gem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 28dd3b37b2f37416589d56bfdcd0920d
+    m_Address: Panel_Shop_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eaa8ec6c5a4b8463695416e9010d2105
+    m_Address: Panel_Stage.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 558b2866cfa434ab79223a16b8e78bec
+    m_Address: Panel_Tutorial.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a2abc31fa31eb4fee9093e508e158188
+    m_Address: PlayScene_BossWarning.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 186aa7631ab8b4793bcee8edfdab5dd4
+    m_Address: PlayScene_Continue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 14441a1f5d5a44d62b2f38dc41cfa12e
+    m_Address: PlayScene_Monster.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 06cf6896352704a9cb7a5391147c1af8
+    m_Address: PlayScene_Pause.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e1513813b163947238d7c053941e838d
+    m_Address: PlayScene_Result.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c0bfe9c8fdd2d420a80f2f135bc22376
+    m_Address: PlayScene_Type_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6831fb88fadc94f44bb892f7a3147288
+    m_Address: PlayScene_Type_2_Upgrade.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 140d0cb50a60c47fd8b9581c3dc982dd
+    m_Address: PlayScene_Type_3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 888209f3a4903433f90ab5fa60ebbd4c
+    m_Address: Popup_Equipment_ItemDetail1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 42a37ab7f4cd649ffb8278908ea097a3
+    m_Address: Popup_Equipment_ItemDetail2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c28933747e35440d09664f4199433562
+    m_Address: Popup_Equipment_ItemDetail3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a1468f80f95be4aa5ab7d7c72f40c9f3
+    m_Address: Popup_Language.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c71046537ecfe44dab597cdbce295276
+    m_Address: PowerSave.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3dcabc93179f541309b1afe4a8376480
+    m_Address: TitleScene_Downloading.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 654a6b8db84f94f888a5a62cde03e8e5
+    m_Address: TitleScene_Login.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b0e6f727459ae4cb089d5ccd524d9321
+    m_Address: TitleScene_NetworkError.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7e407423994f34bb380a89bb276fd714
+    m_Address: TitleScene_TapToStart.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2b01dbc27fd63455d8dfa93eeb72db0e
+    m_Address: Fx_Glow_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3d4bc9b74dbbf4afc8b81e74af06d1ab
+    m_Address: Fx_Glow_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 32e66ee402f7f4308a3e72264aaf732c
+    m_Address: Fx_Glow_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 986ab369c729b4c8cb35ce78687e0538
+    m_Address: Fx_Shine_Gem_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1729fdbbea8f144e8a32a02a4352c411
+    m_Address: Fx_Shine_Gem_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cf38011f781af4ffcb70bc5518339294
+    m_Address: Fx_Shine_Gem_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5609831d33801402d9d07c2094d0dda8
+    m_Address: Fx_Shine_Gem_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9812fa11634c94233a97cd25f8abc574
+    m_Address: Fx_Shine_Gem_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9de51b0da7ca440948a7739be8f85c86
+    m_Address: Fx_Shine_Gem_06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e1aea42a949384f6e87b7480d83a2669
+    m_Address: Fx_Shine_Gold_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ed55a5ca978734479ba26800e7027128
+    m_Address: Fx_Shine_Gold_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9b694acab1f1242d4bbc354e7f24d90e
+    m_Address: Fx_Shine_Gold_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d75e6e95354d44e17b235680822f4886
+    m_Address: Fx_Shine_Gold_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 56b86282507c8432bae01bd7922fd4d7
+    m_Address: Fx_Shine_Gold_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ed198deb9a77e4f69befba81b7e35a2e
+    m_Address: Fx_Shine_Gold_06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3844709c67e2b45249984fc8920a0728
+    m_Address: Fx_Star_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 212bc2b7e7b17404484eb4c7d729bea1
+    m_Address: Fx_Star_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 728956b314b2645d19dbc9f8cf983365
+    m_Address: Fx_Star_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dd8af17f82b674783920072b08073058
+    m_Address: Fx_Star_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9a5f34e88ab2047439061b8f3344ad3b
+    m_Address: Fx_Star_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fbfc6dce45fa442089afe9fd0efc43d1
+    m_Address: Particle_Burst_Star.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ebe83b46b58c04952bd2b7f57abf029b
+    m_Address: Particle_Shines_Glow.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3703c4c5699e048be82b8eec6dae9add
+    m_Address: Particle_Spread_Dust.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4487b98bf3f554f0a90f145664c87795
+    m_Address: Particle_SunLight.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0f04d9f3ca6214ae8929a94413c19b5c
+    m_Address: Particle_Tonado.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c6432eb0cb917408ba7ee5d1bc23da81
+    m_Address: Loading_Rotate_Blur.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 10b9a469079e041bbb7b10b6760d91b5
+    m_Address: Loading_Rotate_Dot.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fcb7acd36db9544a593f68e046d1cf2b
+    m_Address: Notify_Green.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cb2f56bffe66b454680887bc5b2dacf2
+    m_Address: Notify_News.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b0904bfeda91e4185b12e1ba2a0f3de9
+    m_Address: Notify_Red.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9b11e17d656874f548523004a50e614d
+    m_Address: PageNavi.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f233b28d5d44149529efa8720816980b
+    m_Address: Player_Joystick_Left.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc4e01044e55c45eba7430698d66c5a7
+    m_Address: Player_Joystick_Right.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8b2b26c6d6a0a4d3f84681091ef1efbd
+    m_Address: Play_Roulette.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 82a639aea2dc240b8b46918227ceec0c
+    m_Address: StatusBar.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 58874913e4cb5488dbd9faf594d2b007
+    m_Address: Switch.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 85bd9d605c0d64d3a9a49705340ff0be
+    m_Address: Toggle_Check.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 726d0bec8fe0585439fb010c9d863e58, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d1eb0d1877ab67b4386078fbd05ad665, type: 2}
+    - {fileID: 11400000, guid: a0d013d41073bb24ba4d6814cfe52b2d, type: 2}

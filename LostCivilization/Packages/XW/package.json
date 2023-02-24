@@ -1,0 +1,14 @@
+{
+  "name": "com.xiaowan.tool",
+  "version": "0.0.4",
+  "displayName": "XW",
+  "description": "XW的一些编辑工具",
+  "unity": "2021.3",
+  "author": {
+    "name": "AnRanJun"
+  },
+  "dependencies": {
+    "com.unity.addressables.cn":"1.19.16",
+    "com.unity.inputsystem": "1.4.4"
+  }
+}

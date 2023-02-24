@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d57ba13fdbcd5498e5926470ff9339, type: 3}
+  m_Name: GameWindow
+  m_EditorClassIdentifier: 
+  PrefabDirectory: Assets/Arts/UI/Prefabs/Windows
+  CodeDirectory: Assets/Scripts/UI
+  Name: GameWindow
+  windowBg: 0
+  windowLayer: 0
+  windowHeader: 0
+  customWindow: {fileID: 852732095627429439, guid: fbdb2198ea57792469ad9d997ab30011,
+    type: 3}
+  viewCode: {fileID: 11500000, guid: a1db2ba99a38a0845a7ee22e1b994434, type: 3}
+  ctlCode: {fileID: 11500000, guid: e05d95f555e8a8c4d9d0edc950ab3927, type: 3}
+  viewCodePreview: "\r\n// \u7531UnitySourceConvertor\u751F\u6210,\u8BF7\u52FF\u624B\u52A8\u4FEE\u6539\r\nusing
+    XWDataStructure;\nusing UnityEngine;\nusing UnityEngine.UI;\n\r\nnamespace GameUI\r\n{\r\n   
+    public class GameWindowView : MonoBehaviour, IPrefabView\r\n    {\r\n       
+    private Transform _transform;\r\n        public Button _exitBTN;\n\t\t\r\n       
+    private void Awake()\r\n        {\r\n            _transform = transform;\r\n           
+    \n\t\t\t_exitBTN = _transform.Find(\"BTN_exit\").GetComponent<Button>();\r\n       
+    }\r\n    }\r\n}"

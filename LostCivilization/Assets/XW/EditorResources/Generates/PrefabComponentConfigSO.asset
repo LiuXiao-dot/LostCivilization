@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2505ef255fec5418d81bea4d914e67, type: 3}
+  m_Name: PrefabComponentConfigSO
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Tip
+      Entry: 1
+      Data: "code\u4E2D\uFF0C\u90E8\u5206\u5B57\u7B26\u4E32\u8868\u793A\u4EE5\u4E0B\u542B\u4E49:\r\n{PrefabName}:prefab\u7684\u540D\u5B57\r\n{CName}:\u7EC4\u4EF6\u540D\r\n{CFName}:\u7EC4\u4EF6\u7684Key\u503C\r\n{FName}:\u7EC4\u4EF6\u7684field\u540D\r\n\u547D\u540D\u65B9\u5F0F\uFF1A\u7EC4\u4EF6A|\u7EC4\u4EF6B_Name
+        \u5982\uFF1ATF_a,TF|BTN_b\r\n"
+    - Name: componentConfig
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[XWUIEditor.UIPrefabConfigSO+TempType,
+        XWEditor]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TF
+    - Name: $v
+      Entry: 7
+      Data: XWUIEditor.UIPrefabConfigSO+TempType, XWEditor
+    - Name: type
+      Entry: 7
+      Data: 2|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.Transform, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: code
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: BTN
+    - Name: $v
+      Entry: 7
+      Data: XWUIEditor.UIPrefabConfigSO+TempType, XWEditor
+    - Name: type
+      Entry: 7
+      Data: 3|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.UI.Button, UnityEngine.UI
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: code
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TOG
+    - Name: $v
+      Entry: 7
+      Data: XWUIEditor.UIPrefabConfigSO+TempType, XWEditor
+    - Name: type
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.UI.Toggle, UnityEngine.UI
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: code
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IMG
+    - Name: $v
+      Entry: 7
+      Data: XWUIEditor.UIPrefabConfigSO+TempType, XWEditor
+    - Name: type
+      Entry: 7
+      Data: 5|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.UI.Image, UnityEngine.UI
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: code
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: XWPROGRESS
+    - Name: $v
+      Entry: 7
+      Data: XWUIEditor.UIPrefabConfigSO+TempType, XWEditor
+    - Name: type
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: XWUI.XWProgress, XW
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: code
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: XWLOADING
+    - Name: $v
+      Entry: 7
+      Data: XWUIEditor.UIPrefabConfigSO+TempType, XWEditor
+    - Name: type
+      Entry: 7
+      Data: 7|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: XWUI.XWLoading, XW
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: code
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

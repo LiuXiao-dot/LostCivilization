@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a70420b15334b4ca93348b81397c5a, type: 3}
+  m_Name: WindowManagerConfigSO
+  m_EditorClassIdentifier: 
+  layers:
+    keysCache: 0000000001000000020000000300000004000000
+    valuesCache: 000000000a0000001e0000003c0000005a000000
+  windowDatas:
+    keysCache:
+    - GameWindow
+    - LoadingWindow
+    - MainWindow
+    - PopupMessageWindow
+    - SettingWindow
+    valuesCache:
+    - name: GameWindow
+      bg: 0
+      layer: 0
+      header: 0
+      reference:
+        m_AssetGUID: fbdb2198ea57792469ad9d997ab30011
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      ctlType:
+        assmblyName: LostCivilization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        typeName: GameWindowCtl
+        namespaceName: GameUI
+    - name: LoadingWindow
+      bg: 0
+      layer: 4
+      header: 0
+      reference:
+        m_AssetGUID: b4a1b3c758e243c43acbd3f68aee59a6
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      ctlType:
+        assmblyName: LostCivilization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        typeName: LoadingWindowCtl
+        namespaceName: GameUI
+    - name: MainWindow
+      bg: 0
+      layer: 0
+      header: 0
+      reference:
+        m_AssetGUID: 9d05058cb344a0942b500c9bcc37e438
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      ctlType:
+        assmblyName: LostCivilization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        typeName: MainWindowCtl
+        namespaceName: GameUI
+    - name: PopupMessageWindow
+      bg: 0
+      layer: 3
+      header: 0
+      reference:
+        m_AssetGUID: e82acb7f7cf8e634d8aea535703e213f
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      ctlType:
+        assmblyName: LostCivilization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        typeName: PopupMessageWindowCtl
+        namespaceName: GameUI
+    - name: SettingWindow
+      bg: 0
+      layer: 1
+      header: 0
+      reference:
+        m_AssetGUID: 715c08857bbc78c418887e2b2fde73e4
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      ctlType:
+        assmblyName: LostCivilization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        typeName: SettingWindowCtl
+        namespaceName: GameUI
