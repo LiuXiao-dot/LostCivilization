@@ -56,5 +56,11 @@ namespace XWUtilityEditor
         {
             return logLevel;
         }
+
+        private void OnValidate()
+        {
+            if(Instance)
+                XWLogger.ChangeLoggerLevel(Instance);
+        }
     }
 }

@@ -1,44 +1,54 @@
+using System;
+using UnityEngine;
 namespace XWGrid.Hexagon
 {
     /// <summary>
     /// 边
     /// </summary>
-    public struct Edge
+    public struct Edge : IEquatable<Edge>
     {
-        public VertexCenter a;
-        public VertexCenter b;
+        public Vector3 a;
+        public Vector3 b;
 
-        private Edge(VertexCenter a, VertexCenter b)
+        private Edge(Vector3 a, Vector3 b)
         {
             this.a = a;
             this.b = b;
         }
 
-        public static Edge CreateEdge(VertexCenter a, VertexCenter b)
+        public static Edge CreateEdge(Vector3 a, Vector3 b)
         {
-            if (a.Equals(b)) return default;
-            return new Edge(a,b);
+            if (a.Equals(b)) return default(Edge);
+            return new Edge(a, b);
         }
 
-        public static bool operator ==(Edge a,Edge b)
+        /// <summary>
+        /// 获取三角形的第三个顶点
+        /// </summary>
+        public void GetTriangleVertexs(out Vector3 vertexA, out Vector3 vertexB)
+        {
+            var dif = a - b; // 差值，三角形为将差值换个位置
+            vertexA = new Vector3(a.x + dif.y, a.y + dif.z, a.z + dif.x);
+            vertexB = new Vector3(a.x + dif.z, a.y + dif.x, a.z + dif.y);
+        }
+
+        public static bool operator ==(Edge a, Edge b)
         {
             return a.Equals(b);
         }
-        
-        public static bool operator !=(Edge a,Edge b)
+
+        public static bool operator !=(Edge a, Edge b)
         {
             return !a.Equals(b);
-        }
-        
-        public override bool Equals(object obj)
-        {
-            if(obj is Edge other) return (this.a == other.a && this.b == other.b) || (this.a == other.b && this.b == other.a);
-            return false;
         }
 
         public override int GetHashCode()
         {
-            return a.GetHashCode() + b.GetHashCode();
+            return HashCode.Combine(a, b);
+        }
+        public bool Equals(Edge other)
+        {
+            return (this.a == other.a && this.b == other.b) || (this.a == other.b && this.b == other.a);
         }
     }
 }
