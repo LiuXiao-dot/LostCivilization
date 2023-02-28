@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6663deafd0d14360b395ce72e8e82e72, type: 3}
+  m_Name: ActorConfigs
+  m_EditorClassIdentifier: 
+  configs:
+    keysCache:
+    - skeleton
+    - human
+    valuesCache:
+    - {fileID: 11400000, guid: 9d1d07796a0eda3438418e6cddae2e3a, type: 2}
+    - {fileID: 11400000, guid: 47e054b75d6dc38438d6737c6ba51d1e, type: 2}

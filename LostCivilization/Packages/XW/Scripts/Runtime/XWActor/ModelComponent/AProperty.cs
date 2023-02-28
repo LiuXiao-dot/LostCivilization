@@ -1,5 +1,6 @@
 using System;
-namespace XWDataStructure
+using XWDataStructure;
+namespace XWActor
 {
     /// <summary>
     /// 数据抽象类

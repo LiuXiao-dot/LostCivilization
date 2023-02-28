@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Sirenix.OdinInspector;
 using UnityEngine;
-namespace XWDataStructure
+using XWDataStructure;
+namespace XWActor
 {
     /// <summary>
     /// 碰撞相关属性(若后续需要一个数据中包含多个碰撞器，需要添加一个TriggerListProperty)

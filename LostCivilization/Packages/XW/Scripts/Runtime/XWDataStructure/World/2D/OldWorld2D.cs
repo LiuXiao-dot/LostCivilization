@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -85,7 +85,7 @@ namespace XWDataStructure
             int i, j, k;
             /*foreach (TriggerEvent temp in _triggers) {
                 _objectPool.Release(temp);
-            }*/
+            }#1#
             _triggers.Clear();
             for (i = 0; i < length; i++) {
                 if (actorShapes[i] == null) continue;
@@ -101,7 +101,7 @@ namespace XWDataStructure
                         var triggerEvent = new TriggerEvent(shape1,otherShape,Vector2.zero);
                         /*var triggerEvent = _objectPool.Get();
                         triggerEvent.from = shape1;
-                        triggerEvent.to = otherShape;*/
+                        triggerEvent.to = otherShape;#1#
                         if(_triggers.Contains(triggerEvent))
                             continue;
                         var normalize = shape1.GetModel<TriggerProperty>().shape.GetNormalize(otherShape.GetModel<TriggerProperty>().shape);
@@ -207,4 +207,4 @@ namespace XWDataStructure
             checkOffsets.Clear();
         }
     }
-}
+}*/

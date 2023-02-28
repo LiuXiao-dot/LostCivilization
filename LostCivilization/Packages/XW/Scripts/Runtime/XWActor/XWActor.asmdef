@@ -1,7 +1,7 @@
 {
     "name": "XWActor",
     "rootNamespace": "XWActor",
-    "references": [],
+    "references": ["GUID:9c78e1b1ae29712479fe44b3e9de0708"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

@@ -1,10 +1,12 @@
 using System;
-namespace XWDataStructure
+using XWDataStructure;
+namespace XWActor
 {
     /// <summary>
-    /// Property的数据容器
+    /// Actor:Property的数据容器
     /// </summary>
-    public abstract class APropertyModel : AModel
+    [Serializable]
+    public class Actor : AModel
     {
         public override void InjectModel(Type t, object newModel)
         {

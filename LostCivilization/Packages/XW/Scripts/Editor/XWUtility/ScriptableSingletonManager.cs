@@ -28,9 +28,6 @@ namespace XWUtilityEditor
                 {
                     var newSO = ScriptableObject.CreateInstance(type);
                     AssetDatabase.CreateAsset(newSO,xWFilePathAttribute.filePath);
-                    /*var temp = $"Assets/{Path.GetFileName(xWFilePathAttribute.filePath)}";
-                    AssetDatabase.CreateAsset(newSO, temp);
-                    File.Move($"{EditorUtils.BasePath}/{temp}",$"{EditorUtils.BasePath}/{xWFilePathAttribute.filePath}");*/
                 }
                 else
                 {

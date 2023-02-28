@@ -37,21 +37,20 @@ namespace XWTool
             OdinMenuTree tree = new OdinMenuTree(supportsMultiSelect: true);
             tree.Config.DrawSearchToolbar = true;
             tree.Config.DefaultMenuStyle.Height = 22;
-            foreach (var temp in tools)
-            {
+            foreach (var temp in tools) {
                 var tempTool = temp.GetType().GetCustomAttribute<ToolAttribute>();
                 //if (tempTool.icon == ToolIconEnum.NONE)
-                    tree.Add(tempTool.path, temp);
+                tree.Add(tempTool.path, temp);
+                if(temp is ITool itool) itool.InitWithTree(tree);
                 /*else
                     tree.Add(tempTool.path, temp, ToolConstant.DefaultIcons[tempTool.icon]);*/
             }
-            
+
             tree.SortMenuItemsByName();
             return tree;
         }
-        
-        #region Utils
 
+        #region Utils
         /// <summary>
         /// 获取所有工具
         /// 1.继承自ScriptableObject的会查找.asset资产，有多个会展示多个
@@ -67,27 +66,21 @@ namespace XWTool
 
             assemblies.GetAllMarkedType<ToolAttribute>(defaultAssembly, types);
 
-            foreach (var temp0 in types)
-            {
-                if (temp0.IsChildOf(typeof(UnityEngine.ScriptableObject)))
-                {
+            foreach (var temp0 in types) {
+                if (temp0.IsChildOf(typeof(UnityEngine.ScriptableObject))) {
                     var tempSos = AssetDatabase.FindAssets($"t:{temp0.Name}")
                         .Select(temp => AssetDatabase.GUIDToAssetPath(temp))
                         .Select(temp => AssetDatabase.LoadAssetAtPath<ScriptableObject>(temp));
-                    if (tempSos.Count() == 0)
-                    {
+                    if (tempSos.Count() == 0) {
                         XWLogger.Error($"{temp0.FullName}没有创建实例");
                     }
 
                     tools.AddRange(tempSos);
-                }
-                else
-                {
+                } else {
                     tools.Add(Activator.CreateInstance(temp0));
                 }
             }
         }
-
         #endregion
     }
 }

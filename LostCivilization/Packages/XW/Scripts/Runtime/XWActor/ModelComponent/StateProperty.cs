@@ -1,5 +1,5 @@
 using System;
-namespace XWDataStructure
+namespace XWActor
 {
     /// <summary>
     /// 状态属性

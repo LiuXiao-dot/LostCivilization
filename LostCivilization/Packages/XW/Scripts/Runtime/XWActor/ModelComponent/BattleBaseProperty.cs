@@ -1,5 +1,5 @@
 using System;
-namespace XWDataStructure
+namespace XWActor
 {
     /// <summary>
     /// 战斗相关属性

@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-namespace XWDataStructure
+namespace XWActor
 {
     /// <summary>
     /// Actor基础数据
