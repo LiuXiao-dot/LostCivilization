@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Numerics;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 namespace XWGrid.Hexagon
@@ -50,7 +49,7 @@ namespace XWGrid.Hexagon
             return new Quad(a,b,c,d);
         }
         
-        public void Scroll(Dictionary<Vector3,Vector3> difDic)
+        public void Scroll(Dictionary<Vector3,VertexData> difDic)
         {
             Vector3 center = (a + b + c + d) / 4;
             Vector3 verctorA = (a 
@@ -61,14 +60,22 @@ namespace XWGrid.Hexagon
             var verctorC = Quaternion.AngleAxis(180, Vector3.up) * (verctorA - center) + center;
             var verctorD = Quaternion.AngleAxis(270, Vector3.up) * (verctorA - center) + center;
 
-            difDic.TryAdd(a,Vector3.zero);
-            difDic.TryAdd(b,Vector3.zero);
-            difDic.TryAdd(c,Vector3.zero);
-            difDic.TryAdd(d,Vector3.zero);
-            difDic[a] += (verctorA - a) * 0.1f;
-            difDic[b] += (verctorB - b) * 0.1f;
-            difDic[c] += (verctorC - c) * 0.1f;
-            difDic[d] += (verctorD - d) * 0.1f;
+            if (!difDic.ContainsKey(a)) {
+                difDic.Add(a,new VertexData());
+            }
+            if (!difDic.ContainsKey(b)) {
+                difDic.Add(b,new VertexData());
+            }
+            if (!difDic.ContainsKey(c)) {
+                difDic.Add(c,new VertexData());
+            }
+            if (!difDic.ContainsKey(d)) {
+                difDic.Add(d,new VertexData());
+            }
+            difDic[a].position += (verctorA - a) * 0.1f;
+            difDic[b].position += (verctorB - b) * 0.1f;
+            difDic[c].position += (verctorC - c) * 0.1f;
+            difDic[d].position += (verctorD - d) * 0.1f;
         }
     }
 }

@@ -9,10 +9,24 @@ namespace XWGrid.Hexagon
     [Serializable]
     public struct Grid
     {
+        /// <summary>
+        /// Grid的半径
+        /// </summary>
         public int radius;
+        /// <summary>
+        /// Grid的高度
+        /// </summary>
+        public int height;
+        /// <summary>
+        /// 格子大小
+        /// </summary>
         public int cellSize;
         /// <summary>
-        /// 六边形顶点
+        /// 格子高度
+        /// </summary>
+        public int cellHeight;
+        /*/// <summary>
+        /// 六边形顶点<q,r,s>
         /// </summary>
         public List<Vector3> hexs;
         /// <summary>
@@ -26,7 +40,7 @@ namespace XWGrid.Hexagon
         /// <summary>
         /// 所有四边形
         /// </summary>
-        public List<Quad> quads;
+        public List<Quad> quads;*/
 
         /// <summary>
         /// 网格细分后的四边形
@@ -42,27 +56,28 @@ namespace XWGrid.Hexagon
 
         static readonly ProfilerMarker gridCreate = new ProfilerMarker("gridCreate");
 
-        public Grid(int radius, int cellSize, int smoothTime = 5,int seed = 0)
+        public Grid(int radius,int height, int cellSize, int cellHeight, int smoothTime = 5,int seed = 0)
         {
             using (gridCreate.Auto()) {
                 this.radius = radius;
+                this.height = height;
                 this.cellSize = cellSize;
-                hexs = new List<Vector3>(radius * (radius + 1) * 3 + 1);
-                triangles = new List<Triangle>(6 * radius * radius);
-                edges = new List<Edge>(9 * radius * radius + 3 * radius);
-                quads = new List<Quad>(3 * radius * radius);
+                this.cellHeight = cellHeight;
+                var hexs = new List<Vector3>(radius * (radius + 1) * 3 + 1);
+                var triangles = new List<Triangle>(6 * radius * radius);
+                var edges = new List<Edge>(9 * radius * radius + 3 * radius);
+                var quads = new List<Quad>(3 * radius * radius);
                 var random = new SerializableRandom(seed);
                 this.smoothTime = smoothTime;
 
                 CoodinateUtils.Rings(radius, hexs);
                 Triangle.TrianglesRings(radius, hexs, edges, triangles);
 
-                var tempEdges = this.edges;
                 for (int i = 0; i < 10000; i++) {
-                    if (!Triangle.HasNeighborTriangles(tempEdges, triangles)) {
+                    if (!Triangle.HasNeighborTriangles(edges, triangles)) {
                         break;
                     }
-                    Triangle.RandomMergeTriangles(random, tempEdges, triangles, quads);
+                    Triangle.RandomMergeTriangles(random, edges, triangles, quads);
                 }
 
                 subQuads = new List<Quad>(triangles.Count * 3 + quads.Count * 4);
@@ -72,10 +87,9 @@ namespace XWGrid.Hexagon
                 foreach (var quad in quads) {
                     quad.Subdivide(subQuads);
                 }
-                var count = subQuads.Count;
-
-                var difDc = new Dictionary<Vector3, Vector3>(100);
                 
+                var count = subQuads.Count;
+                var difDc = new Dictionary<Vector3, VertexData>(100);
                 for (int i = 0; i < count; i++) {
                     subQuads[i] = subQuads[i].ChangeToWorld(cellSize);
                     for (int j = 0; j < smoothTime; j++) {
@@ -83,12 +97,15 @@ namespace XWGrid.Hexagon
                     }
                 }
                 for (int i = 0; i < count; i++) {
-                    var a = subQuads[i].a + difDc[ subQuads[i].a];
-                    var b = subQuads[i].b + difDc[ subQuads[i].b];
-                    var c = subQuads[i].c + difDc[ subQuads[i].c];
-                    var d = subQuads[i].d + difDc[ subQuads[i].d];
+                    var a = subQuads[i].a + difDc[ subQuads[i].a].position;
+                    var b = subQuads[i].b + difDc[ subQuads[i].b].position;
+                    var c = subQuads[i].c + difDc[ subQuads[i].c].position;
+                    var d = subQuads[i].d + difDc[ subQuads[i].d].position;
                     subQuads[i] = new Quad(a,b,c,d);
                 }
+                
+                // 变为3d网格
+                
             }
             Profiler.enabled = false;
         }
