@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
+using XWGrid.MarchingCube;
 namespace XWGrid.Hexagon
 {
     ///网格的Gizmo展示
@@ -17,17 +18,29 @@ namespace XWGrid.Hexagon
             grid = new Grid(gridSize.x, gridSize.y, cellSize.x, cellSize.y, smoothTime, seed);
         }
 
-        private void OnDrawGizmosSelected()
+        private void OnDrawGizmos()
         {
-            if (grid.Equals(default) || grid.vertexDatas == null) return;
+            if (grid.Equals(default) || grid.vertexDatas == null || grid.cubes == null) return;
 
-            foreach (var vertexData in grid.vertexDatas) {
-                if(vertexData.Value.value == 1)
-                    Gizmos.color = Color.green;
-                else {
-                    Gizmos.color = Color.gray;
-                }
-                Gizmos.DrawSphere(vertexData.Value.position,0.1f);
+            foreach (Cube cube in grid.cubes) {
+                Gizmos.DrawLine(cube.vertexDatas[0].position,cube.vertexDatas[1].position);
+                Gizmos.DrawLine(cube.vertexDatas[1].position,cube.vertexDatas[2].position);
+                Gizmos.DrawLine(cube.vertexDatas[2].position,cube.vertexDatas[3].position);
+                Gizmos.DrawLine(cube.vertexDatas[3].position,cube.vertexDatas[0].position);
+                Gizmos.DrawLine(cube.vertexDatas[0].position,cube.vertexDatas[4].position);
+                Gizmos.DrawLine(cube.vertexDatas[1].position,cube.vertexDatas[5].position);
+                Gizmos.DrawLine(cube.vertexDatas[2].position,cube.vertexDatas[6].position);
+                Gizmos.DrawLine(cube.vertexDatas[3].position,cube.vertexDatas[7].position);
+                Gizmos.DrawLine(cube.vertexDatas[4].position,cube.vertexDatas[5].position);
+                Gizmos.DrawLine(cube.vertexDatas[5].position,cube.vertexDatas[6].position);
+                Gizmos.DrawLine(cube.vertexDatas[6].position,cube.vertexDatas[7].position);
+                Gizmos.DrawLine(cube.vertexDatas[7].position,cube.vertexDatas[4].position);
+            }
+            
+            var vertexs = grid.vertexDatas;
+            foreach (var vertex in vertexs) {
+                Gizmos.color = vertex.Value.value == 0 ? Color.gray: Color.red;
+                Gizmos.DrawSphere(vertex.Key,0.1f);
             }
         }
     }

@@ -4,6 +4,7 @@ using Unity.Profiling;
 using UnityEngine;
 using UnityEngine.Profiling;
 using XWDataStructure;
+using XWGrid.MarchingCube;
 namespace XWGrid.Hexagon
 {
     [Serializable]
@@ -30,6 +31,7 @@ namespace XWGrid.Hexagon
         /// </summary>
         public int smoothTime;
         public Dictionary<Vector3, VertexData> vertexDatas;
+        public List<Cube> cubes;
 
         private static float sqrt3 = Mathf.Sqrt(3);
 
@@ -72,10 +74,15 @@ namespace XWGrid.Hexagon
                 var tempVertexs = new Dictionary<Vector3, VertexData>(100);
                 for (int i = 0; i < count; i++) {
                     subQuads[i] = subQuads[i].ChangeToWorld(cellSize);
-                    for (int j = 0; j < smoothTime; j++) {
-                        subQuads[i].Scroll(tempVertexs);
+                    if (smoothTime == 0) {
+                        subQuads[i].UnScroll(tempVertexs);
+                    } else {
+                        for (int j = 0; j < smoothTime; j++) {
+                            subQuads[i].Scroll(tempVertexs);
+                        }
                     }
                 }
+                cubes = new List<Cube>(count * this.height);
                 for (int i = 0; i < count; i++) {
                     var a = subQuads[i].a + tempVertexs[subQuads[i].a].position;
                     var b = subQuads[i].b + tempVertexs[subQuads[i].b].position;
@@ -99,6 +106,19 @@ namespace XWGrid.Hexagon
                         }
                         if (!this.vertexDatas.ContainsKey(d)) {
                             this.vertexDatas.Add(d, new VertexData(d));
+                        }
+                        if (j > 0) {
+                            var k = j - 1;
+                            var bottoma = this.vertexDatas[new Vector3(a.x, k * cellHeight, a.z)];
+                            var bottomb = this.vertexDatas[new Vector3(b.x, k * cellHeight, b.z)];
+                            var bottomc = this.vertexDatas[new Vector3(c.x, k * cellHeight, c.z)];
+                            var bottomd = this.vertexDatas[new Vector3(d.x, k * cellHeight, d.z)];
+                            var topa = this.vertexDatas[new Vector3(a.x, j * cellHeight, a.z)];
+                            var topb = this.vertexDatas[new Vector3(b.x, j * cellHeight, b.z)];
+                            var topc = this.vertexDatas[new Vector3(c.x, j * cellHeight, c.z)];
+                            var topd = this.vertexDatas[new Vector3(d.x, j * cellHeight, d.z)];
+                            cubes.Add(new Cube(bottoma,bottomb,bottomc,bottomd,
+                                topa,topb,topc,topd));
                         }
                     }
                 }

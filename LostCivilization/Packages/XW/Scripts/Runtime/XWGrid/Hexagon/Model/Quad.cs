@@ -48,6 +48,22 @@ namespace XWGrid.Hexagon
             this.d = Grid.GetFlatCoordinateWorldPosition(d,cellSize);
             return new Quad(a,b,c,d);
         }
+
+        public void UnScroll(Dictionary<Vector3,VertexData> difDic)
+        {
+            if (!difDic.ContainsKey(a)) {
+                difDic.Add(a,new VertexData(a));
+            }
+            if (!difDic.ContainsKey(b)) {
+                difDic.Add(b,new VertexData(b));
+            }
+            if (!difDic.ContainsKey(c)) {
+                difDic.Add(c,new VertexData(c));
+            }
+            if (!difDic.ContainsKey(d)) {
+                difDic.Add(d,new VertexData(d));
+            }
+        }
         
         public void Scroll(Dictionary<Vector3,VertexData> difDic)
         {
