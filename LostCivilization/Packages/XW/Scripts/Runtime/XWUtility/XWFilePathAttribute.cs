@@ -56,22 +56,18 @@ namespace XWUtility
                 case PathType.XWEditor:
                     FileExtension.CheckDirectory("Assets/XW/EditorResources/Generates");
                     return $"Assets/XW/EditorResources/Generates/{filePath}";
-                    break;
                 case PathType.XW:
                 case PathType.InXW:
                     FileExtension.CheckDirectory("Assets/XW/XWResources/Generates");
                     return $"Assets/XW/XWResources/Generates/{filePath}";
-                    break;
                 case PathType.Absolute:
                     return filePath;
-                    break;
                 /*FileExtension.CheckDirectory("Packages/XW/EditorResources/Generates");
                 return  $"Packages/XW/EditorResources/Generates/{filePath}";*/
                 /*FileExtension.CheckDirectory("Packages/XW/XWResources/Generates");
                 return  $"Packages/XW/XWResources/Generates/{filePath}";*/
                 default:
                     return filePath;
-                    break;
             }
         }
     }
