@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da74c43e28b4514f806aeb3fe8827f1, type: 3}
   m_Name: DocumentGenerateTool
   m_EditorClassIdentifier: 
-  assmblys: []
+  assmblys:
+  - {fileID: 5897886265953266890, guid: 9c78e1b1ae29712479fe44b3e9de0708, type: 3}
+  - {fileID: 5897886265953266890, guid: 77aa4aff2a839454dacfd2987407bea2, type: 3}
+  - {fileID: 5897886265953266890, guid: f54c6c1cbbe30a645a0dba5cc66c4818, type: 3}
+  - {fileID: 5897886265953266890, guid: 0a451626a9e51804c974f83a156a7a9a, type: 3}
