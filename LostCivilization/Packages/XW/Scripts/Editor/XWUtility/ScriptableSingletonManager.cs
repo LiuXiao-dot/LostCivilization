@@ -10,7 +10,7 @@ namespace XWUtilityEditor
 
     public static class ScriptableSingletonManager
     {
-        [InitializeOnLoadMethod]
+        //[InitializeOnLoadMethod]
         public static void InitAllSingletons()
         {
             var types = new List<Type>();
