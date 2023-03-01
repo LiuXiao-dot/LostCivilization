@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383ccc6edc300df4cb3bf6a22b13cb06, type: 3}
   m_Name: XWUtilityTool
   m_EditorClassIdentifier: 
-  logLevel: 15
+  logLevel: 0
   _dotsDefine: XW_ENABLE_DOTS

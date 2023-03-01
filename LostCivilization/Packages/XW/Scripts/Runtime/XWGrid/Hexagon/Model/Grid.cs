@@ -25,38 +25,17 @@ namespace XWGrid.Hexagon
         /// 格子高度
         /// </summary>
         public int cellHeight;
-        /*/// <summary>
-        /// 六边形顶点<q,r,s>
-        /// </summary>
-        public List<Vector3> hexs;
-        /// <summary>
-        /// 三角形
-        /// </summary>
-        public List<Triangle> triangles;
-        /// <summary>
-        /// 所有边
-        /// </summary>
-        public List<Edge> edges;
-        /// <summary>
-        /// 所有四边形
-        /// </summary>
-        public List<Quad> quads;*/
-
-        /// <summary>
-        /// 网格细分后的四边形
-        /// </summary>
-        public List<Quad> subQuads;
-
         /// <summary>
         /// 平滑次数
         /// </summary>
         public int smoothTime;
+        public Dictionary<Vector3, VertexData> vertexDatas;
 
         private static float sqrt3 = Mathf.Sqrt(3);
 
         static readonly ProfilerMarker gridCreate = new ProfilerMarker("gridCreate");
 
-        public Grid(int radius,int height, int cellSize, int cellHeight, int smoothTime = 5,int seed = 0)
+        public Grid(int radius, int height, int cellSize, int cellHeight, int smoothTime = 5, int seed = 0)
         {
             using (gridCreate.Auto()) {
                 this.radius = radius;
@@ -80,32 +59,51 @@ namespace XWGrid.Hexagon
                     Triangle.RandomMergeTriangles(random, edges, triangles, quads);
                 }
 
-                subQuads = new List<Quad>(triangles.Count * 3 + quads.Count * 4);
+                var subQuads = new List<Quad>(triangles.Count * 3 + quads.Count * 4);
                 foreach (Triangle triangle in triangles) {
                     triangle.Subdivide(subQuads);
                 }
                 foreach (var quad in quads) {
                     quad.Subdivide(subQuads);
                 }
-                
+
                 var count = subQuads.Count;
-                var difDc = new Dictionary<Vector3, VertexData>(100);
+                this.vertexDatas = new Dictionary<Vector3, VertexData>();
+                var tempVertexs = new Dictionary<Vector3, VertexData>(100);
                 for (int i = 0; i < count; i++) {
                     subQuads[i] = subQuads[i].ChangeToWorld(cellSize);
                     for (int j = 0; j < smoothTime; j++) {
-                        subQuads[i].Scroll(difDc);
+                        subQuads[i].Scroll(tempVertexs);
                     }
                 }
                 for (int i = 0; i < count; i++) {
-                    var a = subQuads[i].a + difDc[ subQuads[i].a].position;
-                    var b = subQuads[i].b + difDc[ subQuads[i].b].position;
-                    var c = subQuads[i].c + difDc[ subQuads[i].c].position;
-                    var d = subQuads[i].d + difDc[ subQuads[i].d].position;
-                    subQuads[i] = new Quad(a,b,c,d);
+                    var a = subQuads[i].a + tempVertexs[subQuads[i].a].position;
+                    var b = subQuads[i].b + tempVertexs[subQuads[i].b].position;
+                    var c = subQuads[i].c + tempVertexs[subQuads[i].c].position;
+                    var d = subQuads[i].d + tempVertexs[subQuads[i].d].position;
+                    subQuads[i] = new Quad(a, b, c, d);
+                    // 变为3d网格
+                    for (int j = 0; j < height; j++) {
+                        a = new Vector3(a.x, j * cellHeight, a.z);
+                        b = new Vector3(b.x, j * cellHeight, b.z);
+                        c = new Vector3(c.x, j * cellHeight, c.z);
+                        d = new Vector3(d.x, j * cellHeight, d.z);
+                        if (!this.vertexDatas.ContainsKey(a)) {
+                            this.vertexDatas.Add(a, new VertexData(a));
+                        }
+                        if (!this.vertexDatas.ContainsKey(b)) {
+                            this.vertexDatas.Add(b, new VertexData(b));
+                        }
+                        if (!this.vertexDatas.ContainsKey(c)) {
+                            this.vertexDatas.Add(c, new VertexData(c));
+                        }
+                        if (!this.vertexDatas.ContainsKey(d)) {
+                            this.vertexDatas.Add(d, new VertexData(d));
+                        }
+                    }
                 }
-                
-                // 变为3d网格
-                
+                tempVertexs.Clear();
+
             }
             Profiler.enabled = false;
         }
@@ -113,8 +111,8 @@ namespace XWGrid.Hexagon
         /// <summary>
         /// 顶点朝上计算坐标
         /// </summary>
-        /// <param name="vector3"></param>
-        /// <returns></returns>
+        /// <param name="vector3">逻辑坐标</param>
+        /// <returns>世界坐标</returns>
         public Vector3 GetPointyCoordinateWorldPosition(Vector3 vector3)
         {
             return new Vector3(cellSize * vector3.x * sqrt3, 0, (-vector3.y - vector3.x / 2f) * 2 * cellSize);
@@ -129,8 +127,8 @@ namespace XWGrid.Hexagon
         {
             return new Vector3(-(vector3.x * sqrt3 + vector3.y * sqrt3 / 2), 0, vector3.y * 3f / 2) * cellSize;
         }
-        
-        public static Vector3 GetFlatCoordinateWorldPosition(Vector3 vector3,int cellSize)
+
+        public static Vector3 GetFlatCoordinateWorldPosition(Vector3 vector3, int cellSize)
         {
             return new Vector3(-(vector3.x * sqrt3 + vector3.y * sqrt3 / 2), 0, vector3.y * 3f / 2) * cellSize;
         }

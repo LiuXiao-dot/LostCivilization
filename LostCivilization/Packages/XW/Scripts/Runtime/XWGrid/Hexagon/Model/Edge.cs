@@ -50,5 +50,14 @@ namespace XWGrid.Hexagon
         {
             return (this.a == other.a && this.b == other.b) || (this.a == other.b && this.b == other.a);
         }
+        /// <summary>
+        /// 会有GC
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            return obj is Edge other && Equals(other);
+        }
     }
 }

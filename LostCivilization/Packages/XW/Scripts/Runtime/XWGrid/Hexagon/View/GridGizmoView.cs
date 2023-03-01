@@ -19,20 +19,15 @@ namespace XWGrid.Hexagon
 
         private void OnDrawGizmosSelected()
         {
-            if (grid.Equals(default) || grid.subQuads == null) return;
+            if (grid.Equals(default) || grid.vertexDatas == null) return;
 
-            var count = grid.subQuads.Count;
-            for (int i = 0; i < count; i++) {
-                var quad = grid.subQuads[i];
-                Gizmos.color = Color.green;
-                var a = quad.a;
-                var b = quad.b;
-                var c = quad.c;
-                var d = quad.d;
-                Gizmos.DrawLine(a, b);
-                Gizmos.DrawLine(b, c);
-                Gizmos.DrawLine(c, d);
-                Gizmos.DrawLine(d, a);
+            foreach (var vertexData in grid.vertexDatas) {
+                if(vertexData.Value.value == 1)
+                    Gizmos.color = Color.green;
+                else {
+                    Gizmos.color = Color.gray;
+                }
+                Gizmos.DrawSphere(vertexData.Value.position,0.1f);
             }
         }
     }

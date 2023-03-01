@@ -1,4 +1,4 @@
-using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 namespace XWGrid.Hexagon
 {
     /// <summary>
@@ -15,6 +15,12 @@ namespace XWGrid.Hexagon
         /// </summary>
         public int value;
 
+        public VertexData(Vector3 position, int value = 0)
+        {
+            this.position = position;
+            this.value = value;
+        }
+        
         public void SetPosition(Vector3 position)
         {
             this.position = position;

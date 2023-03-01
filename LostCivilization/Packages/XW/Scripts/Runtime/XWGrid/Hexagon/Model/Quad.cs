@@ -61,16 +61,16 @@ namespace XWGrid.Hexagon
             var verctorD = Quaternion.AngleAxis(270, Vector3.up) * (verctorA - center) + center;
 
             if (!difDic.ContainsKey(a)) {
-                difDic.Add(a,new VertexData());
+                difDic.Add(a,new VertexData(a));
             }
             if (!difDic.ContainsKey(b)) {
-                difDic.Add(b,new VertexData());
+                difDic.Add(b,new VertexData(b));
             }
             if (!difDic.ContainsKey(c)) {
-                difDic.Add(c,new VertexData());
+                difDic.Add(c,new VertexData(c));
             }
             if (!difDic.ContainsKey(d)) {
-                difDic.Add(d,new VertexData());
+                difDic.Add(d,new VertexData(d));
             }
             difDic[a].position += (verctorA - a) * 0.1f;
             difDic[b].position += (verctorB - b) * 0.1f;
