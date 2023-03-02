@@ -21,92 +21,78 @@ MonoBehaviour:
     m_Address: floor.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d5b79847480639749813eff55238ff51
     m_Address: gray.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 279a04a236668d749b289b7a8ade5442
     m_Address: green.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cbd90bc3e25be1e42a9b1f31e6215f1c
     m_Address: red.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a25b1bbff8c53e149be93281256ab538
     m_Address: StandardConfigSO.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fbdb2198ea57792469ad9d997ab30011
     m_Address: GameWindow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b4a1b3c758e243c43acbd3f68aee59a6
     m_Address: LoadingWindow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9d05058cb344a0942b500c9bcc37e438
     m_Address: MainWindow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 715c08857bbc78c418887e2b2fde73e4
     m_Address: SettingWindow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 62b8c271d3e80814eadffca8a97d0367
     m_Address: CASTLE_standard.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6d32b88c6c4d48d4a9390dc08206659b
     m_Address: CHA_0.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a20e692f33c958f4e94df6b319caa65e
     m_Address: CHA_1.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 20609fefaad7c0f4f8503891780e1ee2
     m_Address: GROUP_0.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 65d56540ac3b7644186ef023100b4ce5
     m_Address: GROUP_1.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b01584b059ca7b54c83c7d939a212abb
     m_Address: CHA_0.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4f991583714987445b249c7dfe11287c
     m_Address: CHA_1.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 48b1ed7a6bc354a4094addf1851fee97
     m_Address: TERRAIN_standard.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e82acb7f7cf8e634d8aea535703e213f
     m_Address: PopupMessageWindow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81cb12194d3734e43841dedc1c8c8106
+    m_Address: simple_terrain.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 726d0bec8fe0585439fb010c9d863e58, type: 2}
   m_SchemaSet:

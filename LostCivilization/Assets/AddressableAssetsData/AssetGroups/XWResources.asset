@@ -61,6 +61,18 @@ MonoBehaviour:
     m_Address: WindowManagerConfigSO.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 47e054b75d6dc38438d6737c6ba51d1e
+    m_Address: human.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9d1d07796a0eda3438418e6cddae2e3a
+    m_Address: skeleton.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cf5611e0f8b4dcc4eb092ae2a47f9481
+    m_Address: ActorConfigs.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 726d0bec8fe0585439fb010c9d863e58, type: 2}
   m_SchemaSet:
