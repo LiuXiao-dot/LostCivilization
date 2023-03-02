@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216a8c5862826744084f1b6cfe0a3649, type: 3}
   m_Name: ToolMenuConfig
   m_EditorClassIdentifier: 
-  assemblies: []
+  assemblies:
+  - {fileID: 5897886265953266890, guid: f54c6c1cbbe30a645a0dba5cc66c4818, type: 3}
   dlls: []
   ugui: []

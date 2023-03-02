@@ -14,14 +14,12 @@ namespace XWInput
         GameInput.IGameplayActions
     {
         private GameInput gameInput;
-        private LayerMask terrain;
 
-        public UnityAction<Vector3> onClick_GAME = delegate {  };
+        public UnityAction<Vector2> onClick_GAME = delegate {  };
 
         protected override void OnEnable()
         {
             base.OnEnable();
-            terrain = LayerMask.GetMask("Terrain");
             if (gameInput == null)
             {
                 gameInput = new GameInput();
@@ -109,7 +107,7 @@ namespace XWInput
         public void OnOnClick(InputAction.CallbackContext context)
         {
             if (context.phase == InputActionPhase.Performed) {
-                onClick_GAME.Invoke(UnityUtils.GetMouseWorldPosition(Camera.main, UnityUtils.GetPointerPosition(), terrain));
+                onClick_GAME.Invoke(UnityUtils.GetPointerPosition());
             }
         }
         public void OnAnyKey(InputAction.CallbackContext context)
